@@ -48,4 +48,8 @@ class UserController extends Controller
         $user->roles()->sync($request->roles);
         return redirect()->route('admin.users.edit', $user);
     }
+
+    public function landing(){
+        return view('admin.landing.landing-bim');
+    }
 }

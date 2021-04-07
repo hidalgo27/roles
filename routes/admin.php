@@ -14,3 +14,5 @@ Route::resource('roles', RoleController::class)->names('roles');
 Route::resource('users', UserController::class)->only('index','edit','update')->names('users');
 Route::resource('users', UserController::class)->only('index','edit','update')->names('users');
 
+Route::get('landing-bim', [UserController::class, 'landing'])->name('landing-bim');
+
